@@ -109,35 +109,18 @@ or right
 
 
 
-// .mdl-social-block {
-//     width: 100%;
-//     display: flex;
-//     justify-content: space-between;
-// }
+.mdl-social-block {    
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 60px;
+}
 
-// .social-p, .social-e, .social-gh {
-//   width: rem(24px);
-//   height: rem(24px);
-//   padding: rem(10px);
-//   background: center no-repeat;
-//   background-color: $color-mdl-blue;
-//   &:hover {
-//     background-blend-mode: overlay;
-//   }
-// }
-// .social-p {
-//   background-image: url("../img/phone.png");
-//   background-image: url("../img/phone.svg");
-// }
+.mdl-social-block > .usa-button {
+  background-color: $color-mdl-red;
+  width: rem(60px);
+}
 
-// .social-e {
-//   background-image: url("../img/email.png");
-//   background-image: url("../img/email.svg");    
-// }
-// .social-gh {
-//   background-image: url("../img/github.png");
-//   background-image: url("../img/github.svg");    
-// }
 
 /* ===========================*
 * Application navigation bar  *
@@ -261,26 +244,16 @@ making .mdl-app-segment a grandchild element of .mdl-app.
 * Search Results           
 * ============================*/
 
-// .mdl-result {
-//   cursor: pointer;
-
-//   .mdl-pic {}
-//   .mdl-social-block {}
-// }
 
 .mdl-result, .mdl-result:hover {
-    // padding: 0 rem(20px);
+
     cursor: pointer;
     .mdl-pic, .mdl-name, .mdl-meta {
       margin: 0;      
     }
     .mdl-pic {
-      padding: rem(20px);
+      padding: 0 rem(20px);
     }
-    .mdl-social-block {
-      padding: 0 rem(80px);
-      margin-bottom: rem(15px);
-    }  
     .mdl-name {
       font-weight: 500;
       margin-bottom: rem(2px);
