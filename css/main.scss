@@ -107,8 +107,6 @@ or right
 * Social Buttons
 * ============================*/
 
-
-
 .mdl-social-block {    
     width: 100%;
     display: flex;
@@ -179,17 +177,40 @@ ul.mdl-nav-links > li a {
 * Page Banner
 * ============================*/
 
-.mdl-banner {
-	background: $color-mdl-blue;
-    color: $color_white;
-    padding: rem(40px) 0;
-    position: relative;    
-    .usa-display {
-    	margin:0;
-    }
+.mdl-banner {	
+  background: $color-mdl-blue;
+  color: $color_white;
+  padding: rem(40px) 0;
+  padding-bottom: rem(100px);
+  position: relative;    
+  .usa-display {
+  	margin:0;
+  }
 	.usa-grid {
 		position: relative;
-    }
+  }
+}
+
+.mdl-profile {
+  text-align: center;
+}
+
+.mdl-profile .mdl-pic {
+    margin: 0 auto;
+    width: rem(250px);
+    border-radius: rem(250px);
+    margin-bottom: rem(20px);
+}
+
+.mdl-profile a {
+  text-align: center;
+  color: darken($color-white, 10%);
+  padding-right: 20px;
+  font-weight: 300;
+}
+
+.mdl-profile i {
+  padding-right: rem(10px);
 }
 
 
