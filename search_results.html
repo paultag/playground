@@ -29,9 +29,34 @@
     <div id="main" class="usa-grid">
       <div class="mdl-app">
         
-        <div class="mdl-app-segment">
+        <div class="mdl-actions">
           <div class="usds-width-one-whole">
-            <div class="usa-search usa-search-medium">
+            
+            <form>
+              <label class="usa-sr-only" for="options">Filter by Agency</label>
+              <select name="options" id="options">
+                <option value="value0">Filter by Agency</option>
+                <option value="value1">Department of Veterans Affairs</option>
+                <option value="value2">Department of Defense</option>
+                <option value="value3">Department of Education</option>
+                <option value="value4">Department of State</option>
+                <option value="value5">Department of Justice</option>
+              </select>
+            </form>
+
+            <form>
+              <label class="usa-sr-only" for="options">Sort by</label>
+              <select name="options" id="options">
+                <option value="value0">Sort</option>
+                <option value="value1">Alphabetically</option>
+                <option value="value2">Active</option>
+                <option value="value3">Tenure</option>
+                <option value="value4">Team Size</option>
+                <option value="value5">Recently Updated</option>
+              </select>
+            </form>
+
+            <div class="usa-search usa-search-big">
               <div role="search">
                 <label class="usa-sr-only" for="search-field-big">Search big</label>
                 <input id="search-field-big" type="search" name="search">
