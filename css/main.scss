@@ -329,6 +329,10 @@ making .mdl-app-segment a grandchild element of .mdl-app.
   .mdl-name, .mdl-meta {
     margin: 0;
   }
+
+  .mdl-pic {
+    border: 1px solid $color-gray-light;
+  }
   .mdl-name {
     padding-top: rem(10px);
   }
@@ -337,43 +341,35 @@ making .mdl-app-segment a grandchild element of .mdl-app.
   }
 }
 
-.mdl-profile .mdl-result-card .mdl-pic {
-  width: rem(175px);
-  height: rem(175px);
-  background-image: url("../img/default-profile.png");
-  border-radius: rem(175px);
-  border: 1px solid $color-gray-light;
+// Profile Results
+.mdl-profile .mdl-result-card {
+  .mdl-pic {
+    width: rem(175px);
+    height: rem(175px);
+    border-radius: rem(175px);
+  }
 }
 
+// Map Results
 .mdl-map {
     width: rem(175px);
     height: rem(175px);
     z-index: 0;
 }
-.mdl-list {
-    padding-bottom: rem(17px);
-}
 
-.mdl-project .mdl-result-card, .mdl-project .mdl-result-card:hover {
+// Project Results
+.mdl-project .mdl-result-card {
   padding: rem(20px);
   min-height: rem(120px);
-
   .mdl-name {
     margin: 0;
   }
-
   .mdl-pic {
-    margin: 10px 0 ;
-  }
-  .mdl-pic img {
-    border: 1px solid $color-gray-light;
     border-radius: 3px;
     float: right;
-    background-color: $color-mdl-red;
     width: rem(32px);
     height: rem(32px);
     margin: rem(3px);
   }
-
 
 }
