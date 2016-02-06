@@ -81,21 +81,27 @@ p, h1, h2, h3, h4, h5, h6 {
 * Globals, Resets, and overrides
 *-----------------------------------*/
 .mdl-txt-c {
-    text-align: center;
+  text-align: center;
 }
 .mdl-txt-r {
-    text-align: right;
+  text-align: right;
 }
 .mdl-txt-l {
-    text-align: left;
+  text-align: left;
 }
 .mdl-txt-uc {
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
 .mdl-meta {
-    color: $color-gray;
-    font-weight: 300;
+  color: $color-gray;
+  font-weight: 300;
 } 
+
+.mdl-truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 
 /*
 Use mdl-push-row to wrap elements that float to the left
@@ -319,6 +325,7 @@ making .mdl-app-segment a grandchild element of .mdl-app.
   color: $color-mdl-blue;
   border-radius: rem(3px);
   min-height: rem(250px);
+  margin-bottom: rem(20px);
   .mdl-name, .mdl-meta {
     margin: 0;
   }
@@ -331,16 +338,25 @@ making .mdl-app-segment a grandchild element of .mdl-app.
 }
 
 .mdl-profile .mdl-result-card .mdl-pic {
-  max-width: rem(175px);
+  width: rem(175px);
+  height: rem(175px);
+  background-image: url("../img/default-profile.png");
   border-radius: rem(175px);
   border: 1px solid $color-gray-light;
 }
 
+.mdl-map {
+    width: rem(175px);
+    height: rem(175px);
+    z-index: 0;
+}
+.mdl-list {
+    padding-bottom: rem(17px);
+}
 
 .mdl-project .mdl-result-card, .mdl-project .mdl-result-card:hover {
   padding: rem(20px);
   min-height: rem(120px);
-  margin-bottom: rem(20px);
 
   .mdl-name {
     margin: 0;
