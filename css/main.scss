@@ -119,6 +119,12 @@ or right
     float: right;
 }
 
+.mdl-truncate {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 
 /* ===========================*
 * Application navigation bar  *
